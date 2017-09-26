@@ -1,0 +1,35 @@
+c:\users\jake\documents\visual studio 2015\Projects\NEA PROTO\NEA PROTO\bin\Debug\NEA PROTO.exe.config
+c:\users\jake\documents\visual studio 2015\Projects\NEA PROTO\NEA PROTO\bin\Debug\NEA PROTO.exe
+c:\users\jake\documents\visual studio 2015\Projects\NEA PROTO\NEA PROTO\bin\Debug\NEA PROTO.pdb
+c:\users\jake\documents\visual studio 2015\Projects\NEA PROTO\NEA PROTO\bin\Debug\NEA PROTO.xml
+c:\users\jake\documents\visual studio 2015\Projects\NEA PROTO\NEA PROTO\obj\Debug\NEA PROTO.vbprojResolveAssemblyReference.cache
+c:\users\jake\documents\visual studio 2015\Projects\NEA PROTO\NEA PROTO\obj\Debug\NEA_PROTO.Form1.resources
+c:\users\jake\documents\visual studio 2015\Projects\NEA PROTO\NEA PROTO\obj\Debug\NEA_PROTO.Resources.resources
+c:\users\jake\documents\visual studio 2015\Projects\NEA PROTO\NEA PROTO\obj\Debug\NEA PROTO.vbproj.GenerateResource.Cache
+c:\users\jake\documents\visual studio 2015\Projects\NEA PROTO\NEA PROTO\obj\Debug\NEA PROTO.exe
+c:\users\jake\documents\visual studio 2015\Projects\NEA PROTO\NEA PROTO\obj\Debug\NEA PROTO.xml
+c:\users\jake\documents\visual studio 2015\Projects\NEA PROTO\NEA PROTO\obj\Debug\NEA PROTO.pdb
+\\moriarty\home\18\8JHA2504\Desktop\NEA stuff from home\NEA PROTO\NEA PROTO\bin\Debug\NEA PROTO.exe.config
+\\moriarty\home\18\8JHA2504\Desktop\NEA stuff from home\NEA PROTO\NEA PROTO\bin\Debug\NEA PROTO.exe
+\\moriarty\home\18\8JHA2504\Desktop\NEA stuff from home\NEA PROTO\NEA PROTO\bin\Debug\NEA PROTO.pdb
+\\moriarty\home\18\8JHA2504\Desktop\NEA stuff from home\NEA PROTO\NEA PROTO\bin\Debug\NEA PROTO.xml
+\\moriarty\home\18\8JHA2504\Desktop\NEA stuff from home\NEA PROTO\NEA PROTO\obj\Debug\NEA PROTO.vbprojResolveAssemblyReference.cache
+\\moriarty\home\18\8JHA2504\Desktop\NEA stuff from home\NEA PROTO\NEA PROTO\obj\Debug\NEA_PROTO.Form1.resources
+\\moriarty\home\18\8JHA2504\Desktop\NEA stuff from home\NEA PROTO\NEA PROTO\obj\Debug\NEA_PROTO.Resources.resources
+\\moriarty\home\18\8JHA2504\Desktop\NEA stuff from home\NEA PROTO\NEA PROTO\obj\Debug\NEA PROTO.vbproj.GenerateResource.Cache
+\\moriarty\home\18\8JHA2504\Desktop\NEA stuff from home\NEA PROTO\NEA PROTO\obj\Debug\NEA PROTO.vbproj.CoreCompileInputs.cache
+\\moriarty\home\18\8JHA2504\Desktop\NEA stuff from home\NEA PROTO\NEA PROTO\obj\Debug\NEA PROTO.exe
+\\moriarty\home\18\8JHA2504\Desktop\NEA stuff from home\NEA PROTO\NEA PROTO\obj\Debug\NEA PROTO.xml
+\\moriarty\home\18\8JHA2504\Desktop\NEA stuff from home\NEA PROTO\NEA PROTO\obj\Debug\NEA PROTO.pdb
+\\moriarty\home\18\8JHA2504\Desktop\nea from home\NEA PROTO\NEA PROTO\bin\Debug\NEA PROTO.exe.config
+\\moriarty\home\18\8JHA2504\Desktop\nea from home\NEA PROTO\NEA PROTO\bin\Debug\NEA PROTO.exe
+\\moriarty\home\18\8JHA2504\Desktop\nea from home\NEA PROTO\NEA PROTO\bin\Debug\NEA PROTO.pdb
+\\moriarty\home\18\8JHA2504\Desktop\nea from home\NEA PROTO\NEA PROTO\bin\Debug\NEA PROTO.xml
+\\moriarty\home\18\8JHA2504\Desktop\nea from home\NEA PROTO\NEA PROTO\obj\Debug\NEA PROTO.vbprojResolveAssemblyReference.cache
+\\moriarty\home\18\8JHA2504\Desktop\nea from home\NEA PROTO\NEA PROTO\obj\Debug\NEA_PROTO.Form1.resources
+\\moriarty\home\18\8JHA2504\Desktop\nea from home\NEA PROTO\NEA PROTO\obj\Debug\NEA_PROTO.Resources.resources
+\\moriarty\home\18\8JHA2504\Desktop\nea from home\NEA PROTO\NEA PROTO\obj\Debug\NEA PROTO.vbproj.GenerateResource.Cache
+\\moriarty\home\18\8JHA2504\Desktop\nea from home\NEA PROTO\NEA PROTO\obj\Debug\NEA PROTO.vbproj.CoreCompileInputs.cache
+\\moriarty\home\18\8JHA2504\Desktop\nea from home\NEA PROTO\NEA PROTO\obj\Debug\NEA PROTO.exe
+\\moriarty\home\18\8JHA2504\Desktop\nea from home\NEA PROTO\NEA PROTO\obj\Debug\NEA PROTO.xml
+\\moriarty\home\18\8JHA2504\Desktop\nea from home\NEA PROTO\NEA PROTO\obj\Debug\NEA PROTO.pdb

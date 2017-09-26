@@ -1,0 +1,36 @@
+C:\Users\Jake\source\repos\level creation program\level creation program\bin\Debug\level creation program.exe.config
+C:\Users\Jake\source\repos\level creation program\level creation program\bin\Debug\level creation program.exe
+C:\Users\Jake\source\repos\level creation program\level creation program\bin\Debug\level creation program.pdb
+C:\Users\Jake\source\repos\level creation program\level creation program\bin\Debug\level creation program.xml
+C:\Users\Jake\source\repos\level creation program\level creation program\obj\Debug\level creation program.vbprojResolveAssemblyReference.cache
+C:\Users\Jake\source\repos\level creation program\level creation program\obj\Debug\level_creation_program.Form1.resources
+C:\Users\Jake\source\repos\level creation program\level creation program\obj\Debug\level_creation_program.Resources.resources
+C:\Users\Jake\source\repos\level creation program\level creation program\obj\Debug\level creation program.vbproj.GenerateResource.Cache
+C:\Users\Jake\source\repos\level creation program\level creation program\obj\Debug\level creation program.vbproj.CoreCompileInputs.cache
+C:\Users\Jake\source\repos\level creation program\level creation program\obj\Debug\level creation program.exe
+C:\Users\Jake\source\repos\level creation program\level creation program\obj\Debug\level creation program.xml
+C:\Users\Jake\source\repos\level creation program\level creation program\obj\Debug\level creation program.pdb
+\\moriarty\home\18\8JHA2504\Desktop\nea from home\level creation program\level creation program\bin\Debug\level creation program.exe.config
+\\moriarty\home\18\8JHA2504\Desktop\nea from home\level creation program\level creation program\bin\Debug\level creation program.exe
+\\moriarty\home\18\8JHA2504\Desktop\nea from home\level creation program\level creation program\bin\Debug\level creation program.pdb
+\\moriarty\home\18\8JHA2504\Desktop\nea from home\level creation program\level creation program\bin\Debug\level creation program.xml
+\\moriarty\home\18\8JHA2504\Desktop\nea from home\level creation program\level creation program\obj\Debug\level creation program.vbprojResolveAssemblyReference.cache
+\\moriarty\home\18\8JHA2504\Desktop\nea from home\level creation program\level creation program\obj\Debug\level_creation_program.Form1.resources
+\\moriarty\home\18\8JHA2504\Desktop\nea from home\level creation program\level creation program\obj\Debug\level_creation_program.Resources.resources
+\\moriarty\home\18\8JHA2504\Desktop\nea from home\level creation program\level creation program\obj\Debug\level creation program.vbproj.GenerateResource.Cache
+\\moriarty\home\18\8JHA2504\Desktop\nea from home\level creation program\level creation program\obj\Debug\level creation program.vbproj.CoreCompileInputs.cache
+\\moriarty\home\18\8JHA2504\Desktop\nea from home\level creation program\level creation program\obj\Debug\level creation program.exe
+\\moriarty\home\18\8JHA2504\Desktop\nea from home\level creation program\level creation program\obj\Debug\level creation program.xml
+\\moriarty\home\18\8JHA2504\Desktop\nea from home\level creation program\level creation program\obj\Debug\level creation program.pdb
+\\moriarty\home\18\8JHA2504\B12-applicator\level creation program\level creation program\bin\Debug\level creation program.exe.config
+\\moriarty\home\18\8JHA2504\B12-applicator\level creation program\level creation program\bin\Debug\level creation program.exe
+\\moriarty\home\18\8JHA2504\B12-applicator\level creation program\level creation program\bin\Debug\level creation program.pdb
+\\moriarty\home\18\8JHA2504\B12-applicator\level creation program\level creation program\bin\Debug\level creation program.xml
+\\moriarty\home\18\8JHA2504\B12-applicator\level creation program\level creation program\obj\Debug\level creation program.vbprojResolveAssemblyReference.cache
+\\moriarty\home\18\8JHA2504\B12-applicator\level creation program\level creation program\obj\Debug\level_creation_program.Form1.resources
+\\moriarty\home\18\8JHA2504\B12-applicator\level creation program\level creation program\obj\Debug\level_creation_program.Resources.resources
+\\moriarty\home\18\8JHA2504\B12-applicator\level creation program\level creation program\obj\Debug\level creation program.vbproj.GenerateResource.Cache
+\\moriarty\home\18\8JHA2504\B12-applicator\level creation program\level creation program\obj\Debug\level creation program.vbproj.CoreCompileInputs.cache
+\\moriarty\home\18\8JHA2504\B12-applicator\level creation program\level creation program\obj\Debug\level creation program.exe
+\\moriarty\home\18\8JHA2504\B12-applicator\level creation program\level creation program\obj\Debug\level creation program.xml
+\\moriarty\home\18\8JHA2504\B12-applicator\level creation program\level creation program\obj\Debug\level creation program.pdb
