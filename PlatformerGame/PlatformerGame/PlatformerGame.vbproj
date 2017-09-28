@@ -145,5 +145,35 @@
   <ItemGroup>
     <None Include="Resources\under water sky.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpriteDoubleJumpLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpriteDoubleJumpRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpriteJumpLeft1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpriteJumpLeft2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpriteJumpRight1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpriteJumpRight2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpriteMoveLeft.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpriteStoodLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpriteMoveRight.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpriteStoodRight.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
