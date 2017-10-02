@@ -175,5 +175,11 @@
   <ItemGroup>
     <None Include="Resources\SpriteStoodRight.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlanetSky.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DesertSky.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
