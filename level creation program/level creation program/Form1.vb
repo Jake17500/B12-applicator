@@ -1,4 +1,5 @@
-﻿Public Class Form1
+﻿Imports System.IO
+Public Class Form1
     Const GROUND As Char = "G"
     Const BLOCK As Char = "B"
     Const ITEMBLOCK As Char = "I"
@@ -24,8 +25,12 @@
     Dim EndOfLevel As Boolean
     Dim probability As Integer
     Dim IsAIR As Boolean
+
     Dim ChunkCount As Integer = 0
     Dim NoOfChunks As Integer
+    Dim LevelNo As Integer
+    Dim NoOfLevels As Integer
+
 
     Dim RND As New Random
 
@@ -35,7 +40,7 @@
 
     Private Sub StartButton_Click(sender As Object, e As EventArgs) Handles StartButton.Click
         For i = 0 To NoOfChunks
-            CreateChunk()
+            'CreateChunk()
             RunCheck()
         Next
     End Sub
@@ -517,9 +522,9 @@
             If COMPLETE = True Then
                 SaveToLevelFile()
             ElseIf AllDead = True Then
-
+                MsgBox("FAIL - all players died")
             ElseIf count > 1000 Then
-
+                MsgBox("FAIL - over 1000 runs")
             End If
 
         Catch ex As Exception
@@ -530,7 +535,23 @@
 
 
     Sub SaveToLevelFile()
+        Dim spath As String = Directory.GetCurrentDirectory
 
+        If (Not System.IO.Directory.Exists(Path.Combine(spath, "lvl" & LevelNo))) Then
+            System.IO.Directory.CreateDirectory(Path.Combine(spath, "lvl" & LevelNo))
+            If (Not System.IO.File.Exists(Path.Combine(spath, "lvl" & LevelNo & "\Chunk" & ChunkCount & ".txt"))) Then
+                System.IO.File.Create(Path.Combine(spath, "lvl" & LevelNo & "\Chunk" & ChunkCount & ".txt"))
+            End If
+        End If
+
+
+
+        Using writer As StreamWriter = New StreamWriter("lvl" & LevelNo & "\Chunk" & ChunkCount & ".txt")
+
+            writer.Write("One ")
+            writer.WriteLine("two 2")
+            writer.WriteLine("Three")
+        End Using
     End Sub
 
 
