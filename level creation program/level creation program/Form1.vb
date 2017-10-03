@@ -493,8 +493,8 @@ Public Class Form1
         Dim AllDead As Boolean
         Dim count As Integer = 0
         grid = GetFileGrid()
-        Try
-            Do
+        'Try
+        Do
                 AllDead = True
                 count = count + 1
                 For i = 1 To GRIDROWS
@@ -527,15 +527,14 @@ Public Class Form1
                 MsgBox("FAIL - over 1000 runs")
             End If
 
-        Catch ex As Exception
-            MsgBox("Crash")
-        End Try
+        'Catch ex As Exception
+        'MsgBox("Crash")
+        'End Try
 
     End Sub
 
-
-    Sub SaveToLevelFile()
-        Dim spath As String = Directory.GetCurrentDirectory
+    Dim spath As String = Directory.GetCurrentDirectory
+    Sub CreateLevelFile()
 
         If (Not System.IO.Directory.Exists(Path.Combine(spath, "lvl" & LevelNo))) Then
             System.IO.Directory.CreateDirectory(Path.Combine(spath, "lvl" & LevelNo))
@@ -544,9 +543,12 @@ Public Class Form1
             End If
         End If
 
+    End Sub
 
+    Sub SaveToLevelFile()
 
-        Using writer As StreamWriter = New StreamWriter("lvl" & LevelNo & "\Chunk" & ChunkCount & ".txt")
+        Dim SaveLocation As String = (spath & "\lvl" & LevelNo & "\Chunk" & ChunkCount & ".txt")
+        Using writer As StreamWriter = New StreamWriter(SaveLocation)
 
             writer.Write("One ")
             writer.WriteLine("two 2")
