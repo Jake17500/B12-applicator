@@ -126,6 +126,34 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+    <None Include="Resources\game textures.zip" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\block.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\desert ground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\planet ground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\underwater ground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\item box used.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\item-box.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DesertSky.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlanetSky.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\under water sky.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
