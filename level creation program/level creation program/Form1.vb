@@ -15,20 +15,20 @@ Public Class Form1
     Dim COMPLETE As Boolean = False
     Dim row, column As Integer
 
-    Dim MaxRow As Integer
-    Dim ItemBoxFreq As Integer
-    Dim LevelLength As Integer
+    Dim MaxRow As Integer = 4
+    Dim ItemBoxFreq As Integer = 25
     Dim EnemyFreq As Integer
     Dim LevelType As Char
 
     Dim StartOfLevel As Boolean = True
+    Dim PlayerPlaced As Boolean = False
     Dim EndOfLevel As Boolean
     Dim probability As Integer
     Dim IsAIR As Boolean
 
     Dim ChunkCount As Integer = 0
     Dim NoOfChunks As Integer
-    Dim LevelNo As Integer
+    Dim LevelNo As Integer = 1
     Dim NoOfLevels As Integer
 
 
@@ -40,7 +40,7 @@ Public Class Form1
 
     Private Sub StartButton_Click(sender As Object, e As EventArgs) Handles StartButton.Click
         For i = 0 To NoOfChunks
-            'CreateChunk()
+            CreateChunk()
             RunCheck()
         Next
     End Sub
@@ -51,7 +51,7 @@ Public Class Form1
                 row = 7 - R
                 column = C
 
-                probability = 0
+                probability = 25
                 GenConditions()
 
             Next
@@ -81,6 +81,11 @@ Public Class Form1
         If StartOfLevel = True Then
             LevelStart()
 
+
+
+        ElseIf PlayerPlaced = False And row < 6 Then
+            PlacePlayer()
+
         Else
             FillBlock()
 
@@ -100,6 +105,18 @@ Public Class Form1
 
         End If
 
+
+
+    End Sub
+
+    Sub PlacePlayer()
+
+        If row = 5 And column = 1 Then
+            grid(row, column) = PLAYER
+
+            PlayerPlaced = True
+
+        End If
 
     End Sub
 
@@ -157,41 +174,61 @@ Public Class Form1
         OverPit()
         TooManyBlocksInRow()
         DeathOrSuccess()
-
+        AbleToGetOnTop()
 
     End Sub
 
     Sub AbleToGetOnTop()
 
-        '   on ground row ----------------------------------------------------------------------------
+
+
+    End Sub
+
+    Sub GroundRow()
+
         If row = 6 Then
             If grid(row, column - 4) <> AIR Then
                 probability = probability + 30
             Else
                 probability = probability - 15
             End If
+        End If
 
-            'on second row ----------------------------------------------------------------------------
-        ElseIf row = 5 Then
+    End Sub
+    Sub SecondRow()
+
+        If row = 5 Then
             If grid(row - 1, column - 1) <> AIR Then
                 probability = probability + 30
             ElseIf grid(row - 2, column - 1) <> AIR Then
                 probability = probability + 30
             End If
-
-            'on other rows ----------------------------------------------------------------------------
-        Else
-            If grid(row - 2, column - 2) <> AIR Then
-                probability = probability + 30
-            ElseIf grid(row - 1, column - 1) <> AIR Then
-                probability = probability + 30
-            ElseIf grid(row - 2, column - 1) <> AIR Then
-                probability = probability + 30
-            End If
-
         End If
 
     End Sub
+    Sub OtherRow()
+
+        If grid(row - 2, column - 2) <> AIR Then
+            probability = probability + 30
+        ElseIf grid(row - 1, column - 1) <> AIR Then
+            probability = probability + 30
+        ElseIf grid(row - 2, column - 1) <> AIR Then
+            probability = probability + 30
+        End If
+
+
+    End Sub
+
+    Sub FirstColumn()
+
+    End Sub
+    Sub SecondColumn()
+
+    End Sub
+    Sub OtherColumn()
+
+    End Sub
+
     Sub OverPit()
         If grid(6, column) = AIR Then
             probability = probability + 10
@@ -493,8 +530,8 @@ Public Class Form1
         Dim AllDead As Boolean
         Dim count As Integer = 0
         grid = GetFileGrid()
-        'Try
-        Do
+        Try
+            Do
                 AllDead = True
                 count = count + 1
                 For i = 1 To GRIDROWS
@@ -520,6 +557,7 @@ Public Class Form1
 
             Loop Until COMPLETE = True Or AllDead = True Or count > 1000
             If COMPLETE = True Then
+                CreateLevelFile()
                 SaveToLevelFile()
             ElseIf AllDead = True Then
                 MsgBox("FAIL - all players died")
@@ -527,9 +565,9 @@ Public Class Form1
                 MsgBox("FAIL - over 1000 runs")
             End If
 
-        'Catch ex As Exception
-        'MsgBox("Crash")
-        'End Try
+        Catch ex As Exception
+            MsgBox("Crash")
+        End Try
 
     End Sub
 
@@ -538,9 +576,9 @@ Public Class Form1
 
         If (Not System.IO.Directory.Exists(Path.Combine(spath, "lvl" & LevelNo))) Then
             System.IO.Directory.CreateDirectory(Path.Combine(spath, "lvl" & LevelNo))
-            If (Not System.IO.File.Exists(Path.Combine(spath, "lvl" & LevelNo & "\Chunk" & ChunkCount & ".txt"))) Then
-                System.IO.File.Create(Path.Combine(spath, "lvl" & LevelNo & "\Chunk" & ChunkCount & ".txt"))
-            End If
+        End If
+        If (Not System.IO.File.Exists(Path.Combine(spath, "lvl" & LevelNo & "\Chunk" & ChunkCount & ".txt"))) Then
+            System.IO.File.Create(Path.Combine(spath, "lvl" & LevelNo & "\Chunk" & ChunkCount & ".txt"))
         End If
 
     End Sub
@@ -548,12 +586,16 @@ Public Class Form1
     Sub SaveToLevelFile()
 
         Dim SaveLocation As String = (spath & "\lvl" & LevelNo & "\Chunk" & ChunkCount & ".txt")
-        Using writer As StreamWriter = New StreamWriter(SaveLocation)
+        Dim SaveWriter As IO.StreamWriter
 
-            writer.Write("One ")
-            writer.WriteLine("two 2")
-            writer.WriteLine("Three")
-        End Using
+        SaveWriter = New IO.StreamWriter(SaveLocation)
+        For row = 1 To GRIDROWS
+            For column = 1 To GRIDCOLUMNS
+                SaveWriter.Write(grid(row, column))
+            Next
+            SaveWriter.WriteLine()
+        Next
+        SaveWriter.Close()
     End Sub
 
 
