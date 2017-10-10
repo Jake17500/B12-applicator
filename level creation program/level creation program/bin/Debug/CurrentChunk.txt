@@ -1,7 +1,7 @@
-BB.....BB.B.BBB.B.BS
-...BB.B...B..B..B.BS
-B..B..B..BB..B.B...S
-..B..B...BB.....B..S
-O.....BBB.....B.B.BS
-GGG..............GGG
+................B..S
+...B.....B.........S
+...................S
+.........B......B..S
+O............B.....S
+GGGGGGGGGGGGGGGGGGGS
 XXXXXXXXXXXXXXXXXXXX

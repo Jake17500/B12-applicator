@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CFB34A1A-CBA2-45BD-A21F-93474A02D69E}</ProjectGuid>
+    <ProjectGuid>{93523821-6C25-4F0D-A182-533F5BE81573}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>PlatformerGame.My.MyApplication</StartupObject>
-    <RootNamespace>PlatformerGame</RootNamespace>
-    <AssemblyName>PlatformerGame</AssemblyName>
+    <StartupObject>PlayableGame.My.MyApplication</StartupObject>
+    <RootNamespace>PlayableGame</RootNamespace>
+    <AssemblyName>PlayableGame</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
@@ -21,7 +21,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>PlatformerGame.xml</DocumentationFile>
+    <DocumentationFile>PlayableGame.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -31,7 +31,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>PlatformerGame.xml</DocumentationFile>
+    <DocumentationFile>PlayableGame.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -79,6 +79,12 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Game.Designer.vb">
+      <DependentUpon>Game.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Game.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -99,6 +105,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Game.resx">
+      <DependentUpon>Game.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -117,6 +126,7 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+    <None Include="Resources\game textures.zip" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\block.png" />
@@ -137,49 +147,13 @@
     <None Include="Resources\item-box.gif" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\desert sky.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\planet sky.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\under water sky.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\SpriteDoubleJumpLeft.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\SpriteDoubleJumpRight.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\SpriteJumpLeft1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\SpriteJumpLeft2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\SpriteJumpRight1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\SpriteJumpRight2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\SpriteMoveLeft.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\SpriteStoodLeft.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\SpriteMoveRight.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\SpriteStoodRight.png" />
+    <None Include="Resources\DesertSky.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\PlanetSky.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\DesertSky.png" />
+    <None Include="Resources\under water sky.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
