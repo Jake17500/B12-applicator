@@ -177,13 +177,13 @@ Public Class Form1
         AbleToGetOnTop()
 
     End Sub
-
+    'make it work ------------------------------
     Sub AbleToGetOnTop()
 
 
 
     End Sub
-
+    '-------------------------------------------
     Sub GroundRow()
 
         If row = 6 Then
