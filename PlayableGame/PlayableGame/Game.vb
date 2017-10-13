@@ -31,7 +31,13 @@ Public Class Game
         Dim filerow As String
         LevelReader = New IO.StreamReader(FileLocation)
 
-
+        For row = 1 To GRIDROWS
+            filerow = LevelReader.ReadLine
+            For column = 1 To GRIDCOLUMNS
+                grid(row, column) = filerow(column - 1)
+            Next
+        Next
+        LevelReader.Close()
     End Sub
     Sub BuildLevel()
 

@@ -1,11 +1,9 @@
 ﻿Public Class Form1
     Public lvlDifficulty As String
     Public lvlType As String
-    Public lvlLength As String
     Private Sub PLAY_Click(sender As Object, e As EventArgs) Handles PLAY.Click
         lvlDifficulty = ComboDiff.Text
         lvlType = ComboType.Text
-        lvlLength = Length.Text
 
         Game.Show()
     End Sub
