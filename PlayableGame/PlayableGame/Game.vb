@@ -22,7 +22,8 @@ Public Class Game
     Dim BlockTexture As String
     Private Sub Game_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         SetTheme()
-
+        GetLevelGrid()
+        BuildLevel()
     End Sub
     Dim Spath As String = Directory.GetCurrentDirectory
     Sub GetLevelGrid()
